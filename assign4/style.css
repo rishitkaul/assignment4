@@ -1,0 +1,246 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #010a01;
+    color: white;
+}
+nav{
+    background-color: #0fa;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.8rem;
+    padding: 20px 10px;
+}
+
+li{
+    padding: 20px 10px;
+}
+.carousel {
+    overflow: hidden;
+    width: 90vw;
+    margin: 2px auto;
+    box-shadow: 4px 4px 4px gray;
+  }
+  figure {
+    position: relative;
+    height: 70vh;
+    width: 500%;
+    animation: 20s carousel infinite;
+  }
+  .carousel figure img {
+    width: 20%;
+    height: 100%;
+    float: left;
+  }
+
+  @keyframes carousel {
+    0% {
+      left: 0%;
+    }
+    20% {
+      left: 0%;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%;
+    }
+    100% {
+      left: -400%;
+    }
+  }
+  .cards{
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.card{
+    height: 400px;
+    width: 300px;
+    margin: 60px;
+    border-radius: 10px;
+    position: relative;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    margin-top: 6rem;
+    font-family:monospace;
+    font-weight: bold;
+    font-size: 60px;
+
+}
+.nav:hover{
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+        
+}
+b{
+    
+    top:90%;
+    left:40%;
+    text-align: center;
+    color: white;
+    
+    font-size: 110%;
+    
+}
+.btn{
+    padding:6px;
+    margin-left: 35%;
+    border-radius: 4px;
+
+    transition: 1s ease;
+    background-color: #0fa;
+    color: white;
+    font-size: 1.5rem;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+
+
+}
+
+.card:hover{
+    transform: scale(110%);
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+}
+
+input{
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 12px;
+    
+}
+
+.review{
+    height: 100px;
+    width: 370px;
+}
+ .btn:hover{
+    cursor: pointer;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
+  .footer{
+    text-align: center;
+    background-color:#0fa;
+    color:white;
+    height: 100px;
+    padding: 20px;
+}
+
+.footer a{
+    font-size: 30px;
+}
+@media screen and (max-width:1260px){
+    .contact{
+        margin-top: 600px;
+    }
+    
+}
+
+@media screen and (max-width:840px){
+    .contact{
+        margin-top: 2200px;
+    }
+    nav,ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 443px) {
+    input{
+        margin-left: 100px;
+        padding: 5px;
+        
+    }
+    .review{
+        width: 50%;
+        margin-right: 100px;
+    }
+    .btn{
+        margin-right: 80px;
+    }
+    nav,ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.btn1{
+    padding:6px;
+    margin-left: 35%;
+    border-radius: 4px;
+
+    transition: 1s ease;
+    background-color: #0fa;
+    color: white;
+    font-size: 1.5rem;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+
+
+}
